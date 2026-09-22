@@ -5,5 +5,3 @@ services:
     build: .
     container_name: emotion_landing_page
     restart: unless-stopped
-    volumes:
-      - ./:/usr/share/nginx/html:ro

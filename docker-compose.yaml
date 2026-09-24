@@ -5,3 +5,5 @@ services:
     build: .
     container_name: emotion_landing_page
     restart: unless-stopped
+    volumes:
+      - ./videos_persistentes:/usr/share/nginx/html/videos_persistentes

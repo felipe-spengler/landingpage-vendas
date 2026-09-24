@@ -49,4 +49,36 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transition = `all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) ${index * 0.1}s`;
         observer.observe(card);
     });
+    // Color picker logic
+    const colorOptions = document.querySelectorAll('.color-option');
+    colorOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            // Update active state among siblings
+            const parent = this.parentElement;
+            parent.querySelectorAll('.color-option').forEach(s => {
+                s.classList.remove('active');
+                s.style.borderColor = 'transparent';
+                if(s.title === 'Branca' || s.title === 'Branco' || s.title === 'Branco e Vermelho') {
+                    s.style.boxShadow = '0 0 0 1px #ccc';
+                } else {
+                    s.style.boxShadow = 'none';
+                }
+            });
+            this.classList.add('active');
+            this.style.borderColor = 'var(--primary-color)';
+            this.style.boxShadow = 'none';
+
+            // Change image
+            const targetId = this.getAttribute('data-target');
+            const newImg = this.getAttribute('data-img');
+            const imgElement = document.getElementById(targetId);
+            if (imgElement && imgElement.src !== newImg) {
+                imgElement.style.opacity = '0.2';
+                setTimeout(() => {
+                    imgElement.src = newImg;
+                    imgElement.style.opacity = '1';
+                }, 200);
+            }
+        });
+    });
 });

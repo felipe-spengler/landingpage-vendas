@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descubra a liberdade da mobilidade elétrica. Scooters elétricas, patinetes e triciclos premium com os melhores preços.">
-    <title>E-Motion | Veículos Elétricos Premium</title>
+    <title>Skyrun Eletric | Veículos Elétricos Premium</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,8 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <i class="ph-fill ph-lightning"></i> E-Motion
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="logo_cropped.png" alt="Skyrun Eletric Logo" style="height: 40px; border-radius: 8px;"> Skyrun Eletric
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
@@ -56,69 +56,48 @@
                 <!-- Product 1: Scooter -->
                 <div class="product-card">
                     <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?auto=format&fit=crop&w=800&q=80" alt="Bike Elétrica Cyber">
-                        <div class="card-badge">Lançamento</div>
-                    </div>
-                    <div class="card-content">
-                        <span class="category">Bike Elétrica (Scooter)</span>
-                        <h3>E-Motion Cyber Max</h3>
-                        <div class="specs">
-                            <span><i class="ph ph-speedometer"></i> 60km/h</span>
-                            <span><i class="ph ph-battery-charging"></i> 80km auto</span>
-                        </div>
-                        <div class="price">R$ 12.500,00</div>
-                        <a href="https://wa.me/554998330635?text=Olá,%20tenho%20interesse%20na%20Scooter%20E-Motion%20Cyber%20Max%20(R$%2012.500,00)" target="_blank" class="btn btn-buy">Comprar via WhatsApp</a>
-                    </div>
-                </div>
-
-                <!-- Product 2: Patinete -->
-                <div class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Patinete Elétrico">
-                    </div>
-                    <div class="card-content">
-                        <span class="category">Patinete Elétrico</span>
-                        <h3>Urban Glider Pro</h3>
-                        <div class="specs">
-                            <span><i class="ph ph-speedometer"></i> 35km/h</span>
-                            <span><i class="ph ph-battery-charging"></i> 40km auto</span>
-                        </div>
-                        <div class="price">R$ 3.800,00</div>
-                        <a href="https://wa.me/554998330635?text=Olá,%20tenho%20interesse%20no%20Patinete%20Urban%20Glider%20Pro%20(R$%203.800,00)" target="_blank" class="btn btn-buy">Comprar via WhatsApp</a>
-                    </div>
-                </div>
-
-                <!-- Product 3: Triciclo -->
-                <div class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1511210877997-6c4ff4da1389?auto=format&fit=crop&w=800&q=80" alt="Triciclo Elétrico">
-                    </div>
-                    <div class="card-content">
-                        <span class="category">Triciclo Elétrico</span>
-                        <h3>Trike Comfort Plus</h3>
-                        <div class="specs">
-                            <span><i class="ph ph-speedometer"></i> 45km/h</span>
-                            <span><i class="ph ph-battery-charging"></i> 65km auto</span>
-                        </div>
-                        <div class="price">R$ 15.900,00</div>
-                        <a href="https://wa.me/554998330635?text=Olá,%20tenho%20interesse%20no%20Triciclo%20Trike%20Comfort%20Plus%20(R$%2015.900,00)" target="_blank" class="btn btn-buy">Comprar via WhatsApp</a>
-                    </div>
-                </div>
-
-                 <!-- Product 4: Scooter Classic -->
-                 <div class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Scooter Elétrica Retrô">
+                        <img id="img-scooter" src="Fotos BC - Scooter E-moovE/Azul/E-moove Azul 3.jfif" alt="Scooter E-moove">
+                        <div class="card-badge">Destaque</div>
                     </div>
                     <div class="card-content">
                         <span class="category">Scooter Elétrica</span>
-                        <h3>E-Motion Retro Vite</h3>
-                        <div class="specs">
-                            <span><i class="ph ph-speedometer"></i> 50km/h</span>
-                            <span><i class="ph ph-battery-charging"></i> 70km auto</span>
+                        <h3>Scooter E-moove</h3>
+                        <div class="color-picker" style="display: flex; gap: 8px; margin: 10px 0;">
+                            <span class="color-option active" data-target="img-scooter" data-color="Azul" data-img="Fotos BC - Scooter E-moovE/Azul/E-moove Azul 3.jfif" style="background-color: #1a5b8f; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid var(--primary-color);" title="Azul"></span>
+                            <span class="color-option" data-target="img-scooter" data-color="Branca" data-img="Fotos BC - Scooter E-moovE/Branca/E-moova Branca 9.jfif" style="background-color: #ffffff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid transparent; box-shadow: 0 0 0 1px #ccc;" title="Branca"></span>
+                            <span class="color-option" data-target="img-scooter" data-color="Laranja" data-img="Fotos BC - Scooter E-moovE/Laranja/E-moove Laranja 1.jfif" style="background-color: #ff7300; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid transparent;" title="Laranja"></span>
+                            <span class="color-option" data-target="img-scooter" data-color="Prata" data-img="Fotos BC - Scooter E-moovE/Prata/E-moove Prata 1.jfif" style="background-color: #c0c0c0; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid transparent;" title="Prata"></span>
+                            <span class="color-option" data-target="img-scooter" data-color="Preta" data-img="Fotos BC - Scooter E-moovE/Preta/E-moove Preta 1.jfif" style="background-color: #000000; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid transparent;" title="Preta"></span>
+                            <span class="color-option" data-target="img-scooter" data-color="Vermelho" data-img="Fotos BC - Scooter E-moovE/Vermelho/E-moove Vermelha 1.jfif" style="background-color: #cc0000; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid transparent;" title="Vermelho"></span>
                         </div>
-                        <div class="price">R$ 11.200,00</div>
-                        <a href="https://wa.me/554998330635?text=Olá,%20tenho%20interesse%20na%20Scooter%20E-Motion%20Retro%20Vite%20(R$%2011.200,00)" target="_blank" class="btn btn-buy">Comprar via WhatsApp</a>
+                        <div class="specs">
+                            <span><i class="ph ph-speedometer"></i> Alta Performance</span>
+                            <span><i class="ph ph-battery-charging"></i> Excelente Autonomia</span>
+                        </div>
+                        <div class="price">Consulte</div>
+                        <a href="https://wa.me/554998330635?text=Olá,%20tenho%20interesse%20na%20Scooter%20E-moove" target="_blank" class="btn btn-buy">Comprar via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Triciclo -->
+                <div class="product-card">
+                    <div class="card-image-wrapper">
+                        <img id="img-triciclo" src="TRICICLOS FOTOS/TRICICLOS FOTOS/VERMELHO/VERMELHO (5).jpg" alt="Triciclo E-force">
+                    </div>
+                    <div class="card-content">
+                        <span class="category">Triciclo Elétrico</span>
+                        <h3>Triciclo E-force</h3>
+                        <div class="color-picker" style="display: flex; gap: 8px; margin: 10px 0;">
+                            <span class="color-option active" data-target="img-triciclo" data-color="Vermelho" data-img="TRICICLOS FOTOS/TRICICLOS FOTOS/VERMELHO/VERMELHO (5).jpg" style="background-color: #cc0000; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid var(--primary-color);" title="Vermelho"></span>
+                            <span class="color-option" data-target="img-triciclo" data-color="Branco" data-img="TRICICLOS FOTOS/TRICICLOS FOTOS/BRANCO/BRANCO (1).jpg" style="background-color: #ffffff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid transparent; box-shadow: 0 0 0 1px #ccc;" title="Branco"></span>
+                            <span class="color-option" data-target="img-triciclo" data-color="Branco e Vermelho" data-img="TRICICLOS FOTOS/TRICICLOS FOTOS/BRANCO E VERMELHO/BRANCO E VERMELHO (1).jpg" style="background: linear-gradient(135deg, #ffffff 50%, #cc0000 50%); width: 24px; height: 24px; border-radius: 50%; cursor: pointer; border: 2px solid transparent; box-shadow: 0 0 0 1px #ccc;" title="Branco e Vermelho"></span>
+                        </div>
+                        <div class="specs">
+                            <span><i class="ph ph-speedometer"></i> Potência</span>
+                            <span><i class="ph ph-battery-charging"></i> Conforto e Segurança</span>
+                        </div>
+                        <div class="price">Consulte</div>
+                        <a href="https://wa.me/554998330635?text=Olá,%20tenho%20interesse%20no%20Triciclo%20E-force" target="_blank" class="btn btn-buy">Comprar via WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -129,7 +108,7 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-brand">
-                <h3><i class="ph-fill ph-lightning"></i> E-Motion</h3>
+                <h3><img src="logo_cropped.png" alt="Skyrun Eletric Logo" style="height: 30px; border-radius: 6px; margin-right: 10px; vertical-align: middle;"> Skyrun Eletric</h3>
                 <p>A revolução na forma como você se move pela cidade.</p>
             </div>
             <div class="footer-contact">
@@ -146,7 +125,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 E-Motion Veículos Elétricos. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Skyrun Eletric. Todos os direitos reservados.</p>
         </div>
     </footer>
 
